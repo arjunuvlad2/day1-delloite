@@ -1,0 +1,28 @@
+title: Heron steering committee: pre-read and summary
+source: Outlook export
+department: Delivery
+date: 2023-11-17
+sensitivity: confidential
+
+Subject: Heron SteerCo 16-Nov - actions and summary
+From: Meera Desai
+To: Heron steering group
+
+Dear all,
+
+Thanks for attending. Quick recap:
+
+1. Progress: 18 of 30 critical data elements have profiling complete; 11 have agreed DQ rules in production (target was 15) - slipping due to the lineage tool delay.
+2. Decision: the CDO will rule on the definition of "active customer" by 1 Dec (a customer with at least one transaction in 12 months OR a live product).
+3. Budget: spend to date 62% vs. 58% of plan; forecast at completion unchanged pending the licence delay.
+4. Risk: DQ rule exceptions volume (c. 4k per day) is too high for the business to triage - proposing threshold recalibration.
+
+Actions
+A1 Bank IT to deliver lineage tool licences - owner: Bank CTO office - due 24 Nov
+A2 Re-baseline thresholds - owner: Meera - due 30 Nov
+A3 Publish glossary v0.9 - owner: Data Governance - due 1 Dec
+
+Kind regards,
+Meera
+
+Meera Desai | Manager | Data & Analytics

@@ -1,0 +1,25 @@
+title: Learning & Development Budget and Certification Support
+source: Confluence/People/L&D
+department: HR
+date: 2024-02-05
+sensitivity: internal
+
+L&D allowance FAQ (2024)
+
+Every colleague has GBP 1,500 (or local equivalent) per financial year (Apr-Mar) to spend on professional growth. Unused budget does NOT roll over.
+
+What it covers
+- Exam and course fees for professional qualifications (e.g. cloud architect certifications, PMP, CFA modules)
+- Conferences and workshops (travel booked separately under T&E)
+- Books, online learning subscriptions (Coursera, O'Reilly)
+- Language lessons if relevant to client work
+
+What it doesn't cover: hobby courses, degrees longer than 1 year (apply to the Sponsored Study scheme instead), alcohol at "networking" events.
+
+How: pay upfront and claim, or ask Finance for a vendor payment link if > GBP 500. Manager approves in Workday > Learning > "Request funding".
+
+Pass-bonus: if you pass a firm-priority certification at first attempt we pay a GBP 500 bonus. Fail? One free retake funded.
+
+Clawback: if you leave within 12 months of a course costing > GBP 1,000, repayment is pro-rated.
+
+Study leave: 2 days paid leave per exam, 3 for the professional partner track exams.

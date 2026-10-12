@@ -1,0 +1,30 @@
+title: Expense Claims - Frequently Asked Questions
+source: Confluence/Finance
+department: Finance
+date: 2024-09-03
+sensitivity: internal
+
+Expense FAQ  (updated Sept 2024 by Finance Ops)
+
+Q. My claim is "Pending manager" for 2 weeks, what now?
+A. Managers get a reminder every 3 days; after 7 days it escalates to their Director. You can also ping #finance-help.
+
+Q. Why was my refund short by GBP 12?
+A. Usually (a) over the daily meal cap, or (b) alcohol on a non-client meal. Check the rejection comments in Concur.
+
+Q. Can I claim back stuff I bought for the team offsite?
+A. Yes, if the offsite was approved in advance. Attach the approval email. Consider the corporate card next time.
+
+Q. I paid in USD, which rate is used?
+A. Concur converts at the card-statement rate if you upload the statement, otherwise the monthly Treasury rate.
+
+Q. How soon will I see the payment?
+A. Next Thursday's pay run if approved by Tuesday midnight.
+
+Q. Lost the receipt?
+A. Missing receipt declaration - max 3 per year. Beyond that the expense is yours.
+
+Q. Do I need to claim mileage for commuting?
+A. No. Commuting from home to your usual office is never reimbursable.
+
+Related: POL-FIN-006 (Travel & Expense policy) and the Corporate Card guide.

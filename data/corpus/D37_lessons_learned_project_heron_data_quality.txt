@@ -1,0 +1,28 @@
+title: Lessons Learned: Project Heron (Bank data-quality programme)
+source: Confluence/Delivery/Lessons Learned
+department: Delivery
+date: 2024-02-28
+sensitivity: confidential
+
+HERON - retro notes (Feb 2024)
+
+Client: regional retail bank. 9-month data quality & lineage programme supporting regulatory reporting.
+
+Wins
+- Agreeing 30 "critical data elements" up-front gave a finite scope.
+- Automated rule library (180 DQ rules in a catalog) reused across 6 source systems.
+- Weekly "data clinic" with business owners moved fixes from IT to the people who understand the data.
+
+Pains
+- Lineage tool licences arrived 10 weeks late (procurement of the vendor tool at the client). We hand-drew lineage in the interim and had to redo it.
+- Business glossary definitions were contested (what is an "active customer"?). Needed a CDO decision; took 6 weeks.
+- Rule thresholds set too tight produced alert fatigue: 4,000 exceptions per day, nobody read them.
+
+Do differently
+* Check dependencies on client-side procurement in week 1 and put them on the RAID log
+* Make a decision-log with named decision makers and deadlines
+* Start with thresholds based on observed distribution, tighten gradually
+* Show quick wins by month 2 (we only delivered in month 4)
+
+Team morale was good; two of the juniors have been promoted.
+- Meera (Heron PM)

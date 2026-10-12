@@ -1,0 +1,21 @@
+title: Client Confidentiality, NDAs and Conflicts
+source: SharePoint/Legal
+department: Legal
+date: 2023-06-19
+sensitivity: internal
+
+Quick guide for engagement teams (Legal & Risk)
+
+1. Our default obligation: client information stays inside the engagement team unless the contract says otherwise. Don't reuse a client's data or name in another client's proposal without written consent. Sanitise case studies (remove names, numbers, anything identifying).
+
+2. NDAs: Northwind signs mutual NDAs on our paper where possible. Do not sign a client's NDA without Legal review if it contains: non-solicit of employees, residual-knowledge clauses missing, unlimited term, unusually broad definition of confidential information, or jurisdiction outside our usual set.
+
+3. Information barriers: where two teams advise competing clients, use ethical walls (access group + signed acknowledgement). The Risk team keeps the register.
+
+4. Subcontractors and freelancers need written confidentiality terms BEFORE they receive anything.
+
+5. Returning data: at end of an engagement, return or destroy client materials as the contract says, and tick the closure checklist (see retention schedule).
+
+6. Journalists, analysts, conference organisers: refer to Corporate Communications. Never comment on client work.
+
+Contact: legal.help@northwind-advisory.example

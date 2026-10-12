@@ -1,0 +1,26 @@
+title: How to: Reset or Re-enrol Multi-Factor Authentication
+source: Confluence/IT/How-to
+department: IT
+date: 2024-06-27
+sensitivity: public
+
+HOW-TO: Re-enrol your second sign-in factor
+
+Use this when you changed handset, factory-reset your device, uninstalled the app, or the six-digit codes are rejected.
+
+Option A - Self-service (needs another working sign-in method or office network)
+1. Go to aka.northwind-advisory.example/mfa from a trusted network (office / VPN).
+2. Verify with your registered backup method (SMS to the number on file or emailed one-time link).
+3. Choose "Add sign-in method" -> Authenticator app -> scan QR with the new phone.
+4. Remove the old device entry.
+
+Option B - Service Desk assisted (if you've no remaining factor)
+1. Call +44 20 5550 0100 (24/7) or visit the IT Bar in any office.
+2. You'll be asked to verify identity: employee number, manager's name, and a video-call check against your badge photo.
+3. Desk issues a time-limited temporary access pass (valid 60 minutes). Use it to enrol the new device immediately.
+Turnaround: normally under 15 minutes.
+
+Tips
+ - Migrate tokens before wiping an old phone; most authenticator apps have a transfer feature.
+ - Don't pick SMS as your only backup if you travel internationally.
+ - Contractors: ask your Northwind sponsor to raise the request.

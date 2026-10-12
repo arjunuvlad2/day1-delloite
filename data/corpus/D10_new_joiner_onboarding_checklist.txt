@@ -1,0 +1,45 @@
+title: New Joiner Onboarding Checklist (first 90 days)
+source: Confluence/People/Onboarding
+department: HR
+date: 2024-06-03
+sensitivity: internal
+
+NEW JOINER ONBOARDING - first 90 days
+Maintained by People Ops. Version 2024-06. Please report broken links in #people-ops.
+
+BEFORE DAY 1 (hiring manager)
+[ ] Order laptop via ServiceNow catalog item "New starter kit" (lead time 10 working days - do NOT wait until the Friday before!)
+[ ] Raise access requests: email, Teams, Workday, Time & Expense, engagement-specific SharePoint sites
+[ ] Nominate a buddy (not the manager, not someone on the same project if avoidable)
+[ ] Send welcome email with first-day logistics
+
+DAY 1
+Colleague arrives 09:30 at reception, collects badge and laptop. IT hands over the device and walks through MFA enrolment - the authenticator app must be installed on the personal phone BEFORE the laptop will let you sign in. People Ops runs the 10:30 welcome session: culture, values, benefits, who's who.
+
+WEEK 1
+- Complete mandatory e-learning: Information Security Awareness (45 min), Code of Conduct (30 min), Data Privacy Essentials (30 min), Anti-bribery & Gifts (20 min). These must be done within 14 days or your access gets suspended - yes, really.
+- Sign the confidentiality undertaking and the acceptable-use acknowledgement
+- Meet your counselor (career coach) and agree goals
+- Book time entry codes with your engagement manager
+- Set up the corporate card (if eligible, after 3 months)
+
+WEEKS 2-4
+- Shadow two client calls
+- Complete the "Northwind Methodology" bootcamp (2 days, virtual)
+- Join your practice's community of practice meeting
+- Get added to the correct distribution lists (ask buddy!)
+
+DAYS 30-60
+- 30-day check-in with line manager: expectations, early feedback, any blockers
+- Start billable work at agreed utilisation (typically ramping 40% -> 70% -> target)
+- Complete the "Working with clients" workshop
+
+DAYS 60-90
+- Probation review (for permanent hires, 6 months total probation but formal feedback at day 90)
+- Submit first learning plan; remember the L&D budget exists (see L&D policy)
+- Give feedback on onboarding to People Ops - we really do read it
+
+COMMON GOTCHAS
+ * Badge not working in lifts: ask facilities, it's a floor-access group issue not a broken card.
+ * "I cant see the engagement in Time & Expense": the engagement manager needs to add you to the WBS code first.
+ * Parking is not included for new joiners - waitlist applies.
