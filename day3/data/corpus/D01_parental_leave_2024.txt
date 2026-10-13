@@ -1,0 +1,30 @@
+title: Parental and Family Leave Policy (2024 revision)
+source: SharePoint/People/Policies
+department: HR
+date: 2024-03-01
+sensitivity: internal
+policy_id: POL-HR-017
+
+Policy ID: POL-HR-017  |  Version 4.0  |  Effective 1 March 2024  |  Owner: People & Culture
+
+1. Purpose
+Northwind wants every colleague to be able to welcome a child without worrying about the pay cheque. This policy replaces v3.1 (Jan 2022) in full.
+
+2. Eligibility
+All permanent and fixed-term employees from day one of employment. Contractors are not covered (see your agency).
+
+3. Entitlement
+- Primary carer: 26 weeks at full base salary
+- Secondary carer / partner: 12 weeks at full base salary
+- Adoption and surrogacy: treated identically to birth
+- Stillbirth or loss after 20 weeks: same entitlement as above, no questions asked
+
+Leave may be taken in up to two blocks within the first 18 months. A "keeping in touch" arrangement (max 10 days) is possible only if the employee requests it in writing.
+
+4. How to apply
+Tell your line manager at least 15 weeks before the expected due date where possible, then submit the form in Workday > Absence > Family Leave. HR Ops confirms within 5 working days.
+
+5. Return to work
+Phased return (80% for 4 weeks, pay stays at 100%) is available. Talk to your People Partner.
+
+Questions -> people.partners@northwind-advisory.example

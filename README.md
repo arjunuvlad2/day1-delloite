@@ -9,6 +9,8 @@ Labs for the AI Solution Architect program. Each day has its own folder. Open th
 | 1 | `day1/` | Lab 1a: three flavours of machine learning |
 | 2 | `day2/` | Lab 2A vectors and semantic search (local + Weaviate Cloud) · Lab 2B ML system design and KPIs · Lab 2C prompting and RAG · demo notebook: LLM internals (instructor-led) |
 
+| 3 | `day3/` | Lab 3A RAG quality and grounding (10 min) · Lab 3B Agentic RAG demo (10 min) |
+
 (Later days are added as the program progresses.)
 
 ## Setup (about 5 minutes)
@@ -19,7 +21,7 @@ You need Python 3.10 or newer.
 python3 -m venv .venv
 source .venv/bin/activate            # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cd day2                              # or day1
+cd day3                              # or day1 / day2
 jupyter lab
 ```
 

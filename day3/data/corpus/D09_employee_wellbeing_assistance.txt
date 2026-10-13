@@ -1,0 +1,24 @@
+title: Employee Wellbeing and Assistance Programme
+source: SharePoint/People/Wellbeing
+department: HR
+date: 2024-01-10
+sensitivity: public
+
+We're all human, and consulting can be relentless. Northwind provides free, confidential support to every colleague and their household members.
+
+Available 24/7 via the Northwind Assist line (provided by an independent third party - we never see names or details):
+ - Short-term counselling: up to 8 sessions per issue, per year, face to face or video
+ - Stress, exhaustion and overload coaching
+ - Financial and legal first-line advice
+ - Bereavement and carer support
+
+Also available:
+ * Mental Health First Aiders in every office (look for the green lanyard)
+ * Quarterly "no-meeting Friday" afternoons
+ * Subsidised gym and mindfulness app (Calm) - claim via benefits portal
+
+Signs you or a teammate might need help: persistent tiredness, withdrawing from the team, irritability, missing deadlines that normally wouldn't be missed, working through the night regularly.
+
+You don't need your manager's permission to use the service, and using it is never recorded in your HR file.
+
+Phone: 0800-555-0142 (UK) / see intranet for other countries.

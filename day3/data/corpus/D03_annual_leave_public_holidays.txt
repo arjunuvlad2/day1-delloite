@@ -1,0 +1,23 @@
+title: Annual Leave and Public Holidays
+source: SharePoint/People/Policies
+department: HR
+date: 2023-09-12
+sensitivity: internal
+policy_id: POL-HR-004
+
+POL-HR-004 - Annual leave (v2.2)
+
+Full-time staff receive 25 days annual leave per leave year (1 Jan - 31 Dec), plus public holidays for the country of their contract. Part-timers pro rata.
+
+Carry-over: up to 5 days may be carried to 31 March of the following year; anything above that is forfeited unless HR approved an exception because of client delivery pressure (document in Workday).
+
+Booking rules
+- 2+ weeks in a row: give your manager 4 weeks notice
+- Peak periods (Dec year-end close, late Mar): engagement partner sign-off needed
+- You cannot "sell" leave back to the firm, except on termination where accrued untaken days are paid out.
+
+Long-service: +1 day at 5 yrs, +2 days at 10 yrs (capped at 30).
+
+Public holidays falling on weekends are NOT moved to Monday unless the local statutory rule says so.
+
+Pls book leave in Workday, not by email -- email requests are not tracked and cause payroll mismatches every year!

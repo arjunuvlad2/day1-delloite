@@ -1,0 +1,19 @@
+title: Practice Operations quarterly review - minutes (Q3 2024)
+source: Teams/Practice Leadership
+department: Operations
+date: 2024-10-07
+sensitivity: internal
+
+Practice Ops QBR Q3 2024 - minutes. Present: practice leads x6, COO, Finance BP.
+
+1. Utilisation: 71.4% vs target 74%. Bench is high in Risk Advisory (growing graduate intake) and low in Cloud & Data (hiring freeze lifted?). 
+2. Pipeline: weighted pipeline GBP 18.2m; 3 large bids pending (2 public sector, 1 insurance). Win-rate last 12m: 34%.
+3. Attrition: 14.8% annualised, mostly 2-4 year experience band. Exit interviews point to workload and limited promotion visibility.
+4. Spend: T&E running 6% over budget since the new city caps; discussion whether caps are realistic for New York.
+5. Hiring: 22 open reqs, time-to-fill 58 days (target 45).
+6. AI initiatives: pilot of internal knowledge search to go to wider beta in Nov; leads asked for a clear data-security story.
+
+Decisions: (a) COO to review NYC hotel cap, (b) HR to share promotion criteria publicly by end Nov, (c) Practice leads to nominate 2 staff each for the beta.
+
+AOB - office move for the Leeds team confirmed for Feb 2025.
+Minutes: J. Whitcombe

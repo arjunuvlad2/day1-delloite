@@ -1,0 +1,33 @@
+title: Travel and Expense Policy 2024
+source: SharePoint/Finance/Policies
+department: Finance
+date: 2024-04-15
+sensitivity: internal
+policy_id: POL-FIN-006
+
+POL-FIN-006  Version 5  -  Effective 15 April 2024  -  Owner: Finance Operations
+
+1. Principle
+Spend the firm's money as carefully as you would your own. Business costs that you pay personally are reimbursed when they are reasonable, necessary, documented and submitted on time.
+
+2. Deadline
+Submit within 30 calendar days of the expense date through Concur. Claims older than 30 days need Finance Director approval and may be taxed as income. (Was 60 days in the 2022 policy.)
+
+3. What is reimbursable
+- Economy air / standard-class rail; business class only for flights > 6 hrs with Partner approval
+- Hotels up to the city cap in Appendix A (London GBP 210, New York USD 340, other cities see table)
+- Meals while travelling: GBP/EUR 85 per day (breakfast, lunch, evening meal, non-alcoholic)
+- Hospitality for clients: up to GBP 120 per head, pre-approved by an Associate Director+, attendees listed on the claim
+- Ground transport: taxis only where public transport is unsafe or unavailable after 21:00
+- Mileage 45p per mile (first 10,000 miles)
+
+4. Not reimbursable
+Minibar, personal entertainment, traffic fines, first-class upgrades paid by choice, partner/family travel.
+
+5. Evidence
+Receipts for every item over GBP 25. Photo of a receipt is fine. Lost receipt? Complete the missing-receipt declaration (max 3 per year).
+
+6. Payment
+Approved claims are paid in the next weekly pay run (Thursdays), straight to your salary account. Corporate-card spend is reconciled by the cardholder, not reimbursed.
+
+Breaches may result in recovery from salary and disciplinary action.

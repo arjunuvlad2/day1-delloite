@@ -1,0 +1,29 @@
+title: Post-mortem PM-2024-02: Credential-phishing campaign, January 2024
+source: Confluence/Security/Post-mortems
+department: Security
+date: 2024-02-09
+sensitivity: confidential
+
+PM-2024-02  Credential phishing (fake "shared document" notification)
+Severity: SEV-3 (no confirmed data loss)   Prepared by: SOC (D. Mensah)
+
+What happened
+On Tue 16 Jan 2024 at 08:12, 212 employees received an email styled as a SharePoint document-share from a known client domain (compromised third-party mailbox). 41 clicked, 19 entered credentials into a lookalike login page. The SOC's mail-gateway rule caught the pattern at 08:47 and purged the remaining copies.
+
+Response
+- 19 accounts reset and sessions revoked within 25 minutes of detection
+- Conditional-access logs reviewed: 2 sign-in attempts from an overseas IP were blocked by MFA number-matching
+- Client notified the same day that their mailbox was compromised
+- Domain of the lookalike page submitted for takedown
+
+Why it worked (partly)
+MFA prevented any account takeover. But 19 people typed their password into a fake site, which is a failure of awareness, not of technology.
+
+Actions
+1. Roll out the "Report Phish" button to mobile mail
+2. Add an external-sender banner that cannot be hidden
+3. Targeted refresher training for the 41 clickers (non-punitive)
+4. Move from SMS fallback to app-only MFA for all staff (see POL-SEC-012)
+5. Phishing simulation cadence from quarterly to monthly
+
+Metric to watch: click rate in simulations (target < 5%; Jan 2024 actual 19%).

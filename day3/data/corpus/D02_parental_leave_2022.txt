@@ -1,0 +1,25 @@
+title: Parental Leave Policy (2022)
+source: SharePoint/People/Policies
+department: HR
+date: 2022-01-15
+sensitivity: internal
+policy_id: POL-HR-017
+
+Policy ID: POL-HR-017  |  Version 3.1  |  Effective 15 Jan 2022  |  Owner: HR
+
+Purpose: to set out leave entitlements for employees who become parents.
+
+Entitlement (v3.1)
+ * Primary carer - 16 weeks at full pay
+ * Secondary carer - 2 weeks at full pay
+ * Adoption - same as birth for primary carer
+ * Additional unpaid leave may be requested, subject to manager approval, up to 12 months.
+
+Eligibility: employees with 6 months' continuous service (probationary staff excluded).
+
+Application: complete the paper form HR-22 and send to your HRBP. Notice of 8 weeks before due date is expected.
+
+Return to work: no phased return option, employees return full-time. Please discuss flexible working with your manager informally.
+
+This policy is reviewed every 3 yrs. Next review due Jan 2025.
+HR Team, Northwind Advisory

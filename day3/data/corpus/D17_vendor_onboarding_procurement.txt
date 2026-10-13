@@ -1,0 +1,24 @@
+title: Vendor Onboarding and Supplier Due Diligence
+source: SharePoint/Procurement
+department: Procurement
+date: 2024-01-22
+sensitivity: internal
+policy_id: POL-PRO-003
+
+POL-PRO-003  Third-party onboarding  (v2.0)
+
+No supplier may be paid until it exists in the vendor master (SAP Ariba). Do not issue work orders or sign contracts before onboarding completes.
+
+Steps
+1. Business sponsor raises a Supplier Request in Ariba with: legal name, registration number, purpose, estimated annual spend, data involved (none / internal / client / personal)
+2. Procurement screens against sanctions and adverse-media lists (2-3 working days)
+3. Risk tier is assigned (see Vendor Risk Tiering): Tier 1 critical, Tier 2 significant, Tier 3 low
+4. Tier 1 and 2: security questionnaire (SIG-Lite), financial health check, data-processing agreement where personal data is involved, insurance certificates
+5. Contract review by Legal using the standard MSA template; deviations need Legal sign-off
+6. Bank details verified by call-back to a number NOT supplied in the email (fraud control)
+7. Vendor activated; sponsor notified
+
+Typical lead time: Tier 3 - 5 days; Tier 2 - 3 weeks; Tier 1 - 6-8 weeks.
+
+Sole-source justification required if spend > GBP 50k without competitive quotes.
+Subcontractors who touch client data must be disclosed to the client under most of our MSAs - flag early!
