@@ -4,4 +4,7 @@ scikit-learn
 matplotlib
 scipy
 fastembed
+chromadb
+weaviate-client
+openai
 jupyter
