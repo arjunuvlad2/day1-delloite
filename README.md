@@ -48,7 +48,7 @@ You need keys only for two optional things. **Nothing breaks without them:** Lab
 ### Option 1: inside the notebook (easiest)
 **Lab 2A, section 7:** uncomment the two `os.environ[...]` lines at the top of the first cell of that section, paste your cluster URL and API key, run the cell.
 
-**Lab 2C:** add a new code cell right after the heading *A.0 Connect an LLM* and **before** the "Helpers" cell, paste this with your own values, then run it:
+**Lab 2C:** there is a ready-made cell right after the heading *A.0 Connect an LLM* (it starts with `# >>> PUT YOUR KEYS HERE`). Remove the leading `# ` from the three `os.environ` lines, paste your values, and run it **before** the next cell:
 
 ```python
 import os
