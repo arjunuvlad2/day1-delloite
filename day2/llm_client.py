@@ -69,4 +69,10 @@ def call_llm(user: str, system: str = None, temperature: float = 0.2, max_tokens
         return client.chat.completions.create(**kw).choices[0].message.content.strip()
     except Exception as e:                       # never break a live demo: say what happened and fall back
         print(f"[llm_client] call failed ({type(e).__name__}: {str(e)[:100]}); using offline demo mode")
+        if "NotFound" in type(e).__name__ or "404" in str(e) or "does not exist" in str(e):
+            try:        # wrong model name: show the models this key can actually use
+                ids = sorted(m.id for m in client.models.list().data)
+                print("[llm_client] models available to your key (set LLM_MODEL to one of these chat models):\n  " + "\n  ".join(ids[:25]))
+            except Exception:
+                print("[llm_client] could not list models: check LLM_API_KEY and LLM_BASE_URL.")
         return _offline(user, system)
