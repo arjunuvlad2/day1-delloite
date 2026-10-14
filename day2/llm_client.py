@@ -65,8 +65,17 @@ def call_llm(user: str, system: str = None, temperature: float = 0.2, max_tokens
             client = OpenAI(api_key=c["key"] or "not-needed", base_url=c["base"] or None)
         msgs = messages or ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": user}]
         kw = dict(model=c["model"], messages=msgs, temperature=temperature, max_tokens=max_tokens)
-        if json_mode: kw["response_format"] = {"type": "json_object"}
-        return client.chat.completions.create(**kw).choices[0].message.content.strip()
+        if "gpt-oss" in c["model"].lower():      # reasoning models: keep thinking short and leave room for the answer
+            kw["max_tokens"] = max(max_tokens, 1500); kw["extra_body"] = {"reasoning_effort": "low"}
+        def _ask(kwargs):
+            out = (client.chat.completions.create(**kwargs).choices[0].message.content or "").strip()
+            if not out: raise ValueError("the model returned an empty answer (try a larger max_tokens or another model)")
+            return out
+        if json_mode:
+            try: return _ask({**kw, "response_format": {"type": "json_object"}})
+            except Exception:                    # some models do not support JSON mode: retry as a normal call
+                return _ask(kw)
+        return _ask(kw)
     except Exception as e:                       # never break a live demo: say what happened and fall back
         print(f"[llm_client] call failed ({type(e).__name__}: {str(e)[:100]}); using offline demo mode")
         if "NotFound" in type(e).__name__ or "404" in str(e) or "does not exist" in str(e):
