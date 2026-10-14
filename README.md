@@ -4,17 +4,16 @@
 
 Labs for the AI Solution Architect program. Each day has its own folder. Open the notebooks in order and follow along with the instructor.
 
-| Day | Folder | Labs |
+| Day | Folder | What you do |
 |---|---|---|
 | 1 | `day1/` | Lab 1a: three flavours of machine learning |
 | 2 | `day2/` | Lab 2A vectors and semantic search (local + Weaviate Cloud) · Lab 2B ML system design and KPIs · Lab 2C prompting and RAG · demo notebook: LLM internals (instructor-led) |
-
-| 3 | `day3/` | Lab 3A RAG quality and grounding (10 min) · Lab 3B Agentic RAG demo (10 min) |
-
-| 4 | `day4/` | Lab 4A agent with three tools · Lab 4B tiny MCP server · Lab 4C MLflow tracking, drift check and A/B test (10 min each) |
-| 5 | `day5/` | Lab 5A explain a model and check fairness · Lab 5B defend a RAG assistant against injection and leaks (10 min each) |
+| 3 | `day3/` | Lab 3A RAG quality and grounding · Lab 3B Agentic RAG demo |
+| 4 | `project/` | Project milestones M1 to M3: assistant with tools, MCP, evaluate / track / monitor |
+| 5 | `project/` | Project milestones M4 and M5: secure and explain, demo and design |
 | Capstone | `capstone/` | Architecture canvas (fill a little each day) and the capstone brief |
 
+On Days 4 and 5 you build one project, the **Northwind Knowledge Assistant**, in five milestones. Open `project/README.md` first.
 
 ## Setup (about 5 minutes)
 
@@ -24,13 +23,13 @@ You need Python 3.10 or newer.
 python3 -m venv .venv
 source .venv/bin/activate            # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cd day4                              # or day1 / day2 / day3 / day5
+cd project                           # or day1 / day2 / day3
 jupyter lab
 ```
 
 Start Jupyter from inside the day folder you are working on, so each notebook can find its `data/` folder and helper files.
 
-Note: `requirements.txt` includes the Day 4 and Day 5 packages (MLflow, SHAP, MCP). They are large, so install everything once, the night before Day 4, on a good connection.
+Note: `requirements.txt` includes the Day 4 and Day 5 project packages (MLflow, SHAP, MCP). They are large, so install everything once, the night before Day 4, on a good connection.
 
 ### Before Day 2 (recommended, 15 minutes)
 1. Open `day2/day2_lab2a_embeddings.ipynb` and run the first two cells. This downloads a small embedding model (about 130 MB) once. If it is blocked on your network, tell the instructor.
