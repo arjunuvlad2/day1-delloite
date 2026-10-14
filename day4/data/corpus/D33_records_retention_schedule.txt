@@ -1,0 +1,30 @@
+title: Records Retention and Disposal Schedule
+source: SharePoint/Legal/Privacy
+department: Legal
+date: 2023-12-04
+sensitivity: internal
+policy_id: POL-PRIV-005
+
+POL-PRIV-005  Retention schedule (v3.0)
+
+Rule of thumb: keep it as long as you must, and delete it when you may.
+
+Record class                                     Retained for                 Trigger
+Engagement working papers & deliverables         7 years                     Engagement closure
+Client contracts and SOWs                         7 years                     Contract end
+Financial / tax records                           7 years (HMRC: 6 + current) End of financial year
+Personnel files                                   6 years                     Employment end
+Recruitment - unsuccessful candidates             12 months                   Decision date
+CCTV and badge logs                               90 days                     Capture
+Mailbox (general)                                 3 years rolling              Receipt
+Teams chats                                       2 years rolling              Message date
+Security logs                                     13 months                   Capture
+Marketing consent records                         Life of consent + 3 years    -
+
+Overrides
+- Legal hold suspends all deletion for the named matter. Legal issues & lifts holds, nobody else.
+- Client contracts can require shorter periods (return/destroy at end) or longer; the engagement manager records the exception in the closure checklist.
+- Personal data: do not retain beyond the purpose even if schedule maximum not yet reached.
+
+Disposal: automated for SharePoint/Exchange labels; manual certificate of destruction for paper and removable media (via the secure shred bins).
+Do not store working copies on personal drives - they won't be reached by the disposal run.

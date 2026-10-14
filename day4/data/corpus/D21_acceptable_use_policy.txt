@@ -1,0 +1,24 @@
+title: Acceptable Use of IT Resources
+source: SharePoint/InfoSec/Policies
+department: Security
+date: 2023-10-02
+sensitivity: internal
+
+Acceptable Use Policy (AUP) v3.3
+
+Company equipment and accounts are provided for business use. Reasonable personal use is tolerated if it does not interfere with work, break the law or create risk.
+
+You must NOT:
+ - install unapproved software or browser extensions (request via Software Catalogue)
+ - connect unknown USB drives
+ - share your credentials with anyone, including IT (we will never ask)
+ - forward client documents to personal email or personal cloud storage
+ - access, store or circulate offensive, discriminatory or illegal content
+ - use company systems for outside business activities or crypto mining
+ - circumvent security tools (proxy, DLP, endpoint agent)
+
+Monitoring: Northwind logs network, email metadata and endpoint activity for security and compliance. Content inspection is applied only on DLP rule matches or during an authorised investigation.
+
+Social media: do not share confidential info; don't imply you speak for Northwind unless authorised.
+
+By logging in you accept this policy. Violations -> HR + Security review.

@@ -1,0 +1,28 @@
+title: Laptop Refresh and Device Replacement
+source: SharePoint/IT/Policies
+department: IT
+date: 2024-02-12
+sensitivity: internal
+policy_id: POL-IT-008
+
+POL-IT-008  End-user device lifecycle  (v2.1)
+
+Standard cycle: laptops are replaced every 4 years (36 months for developers / data engineers on request, because builds are heavy). Phones every 3 years.
+
+Eligibility check: Self Service > My Devices shows your asset age. Devices turn "Eligible for refresh" 90 days before the cycle date.
+
+Early replacement criteria
+- Hardware fault that the IT Bar cannot repair within 3 working days (failed screen, battery swelling, keyboard failure, liquid damage)
+- Performance below the minimum spec for your role, verified by a diagnostics ticket
+- Accessibility needs
+Lost or stolen devices follow the Security incident route; a replacement is issued after the incident ticket is raised.
+
+Accidental damage: first incident is free; second within 24 months, cost centre charged GBP 150 excess.
+
+Process
+1. Raise "Device Replacement" ticket in Self Service with asset tag and fault description (photo helps).
+2. IT Bar offers a loaner within the same working day (stock permitting). Client-site staff: courier next business day.
+3. Back up to OneDrive - devices are re-imaged, local drives are not recovered.
+4. Return the old unit within 10 days; wiped and recycled via certified ITAD vendor.
+
+Standard models: Latitude 7450 (general), ThinkPad P16 (data/analytics), MacBook Pro 14 (design/creative; business case needed).

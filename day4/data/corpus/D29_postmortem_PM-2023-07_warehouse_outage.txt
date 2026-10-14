@@ -1,0 +1,49 @@
+title: Post-mortem PM-2023-07: Analytics warehouse outage (9 Sept 2023)
+source: Confluence/Engineering/Post-mortems
+department: IT
+date: 2023-09-21
+sensitivity: confidential
+
+POST-MORTEM  PM-2023-07
+Incident: Analytics data warehouse unavailable for 6h 40m
+Date: Saturday 9 September 2023   Severity: SEV-2   Author: Lena Fischer (Platform Lead)   Status: Final, blameless format
+
+SUMMARY
+During a scheduled storage-tier migration, the production analytics warehouse (used by 14 client dashboards and the internal utilisation reports) stopped accepting queries at 02:10 UTC and was fully restored at 08:50 UTC. No data was lost. Two clients (a retailer and a utilities client) saw stale dashboards on a Monday-morning board pack because the refresh jobs backed up.
+
+IMPACT
+- 14 client dashboards stale or erroring
+- ~35 consultants unable to run ad-hoc queries until Sunday afternoon
+- One contractual SLA breach (99.5% monthly availability, measured 99.1% for the retailer)
+
+TIMELINE (UTC)
+02:10 Migration job begins moving cold partitions to the cheaper storage tier.
+02:31 Query latency climbs; auto-scaling adds nodes, which makes it worse (more nodes -> more metadata locks).
+03:05 First alert fires, but it was routed to a distribution list that nobody had been watching since the January team reorganisation.
+04:40 A consultant in Singapore raises a ticket manually. On-call engineer paged.
+05:20 Root cause hypothesis: metadata lock contention.
+06:15 Migration job killed; locks persist.
+07:30 Decision to restart the metadata service in a controlled fashion.
+08:50 Service restored; backlog drained by 11:30.
+
+ROOT CAUSE
+The migration was run during the weekend batch window while three heavy ETL jobs were also scheduled. The migration tool takes a table-level lock per partition batch and our auto-scaling policy reacted to latency by adding nodes rather than shedding load.
+
+CONTRIBUTING FACTORS
+1. Alert routing was stale after a reorganisation.
+2. No runbook entry for "metadata lock storm".
+3. Change was not peer-reviewed against the batch schedule.
+4. Client comms were sent 3.5 hours after the first alert.
+
+WHAT WENT WELL
+On-call handover was clean; backups were verified and we did not need to restore from them.
+
+ACTION ITEMS
+- AI-1 Fix alert routing and add quarterly alert-ownership audit (Owner: Platform, due 30 Sep 2023) - DONE
+- AI-2 Write runbook for lock contention (Owner: Lena, due 15 Oct) - DONE
+- AI-3 Change calendar must show ETL schedule; block overlapping heavy changes (Owner: Change Mgr) - DONE
+- AI-4 Cap auto-scaling at 1.5x baseline during maintenance - IN PROGRESS
+- AI-5 Client-comms template: first update within 60 minutes of SEV-2 declaration
+
+LESSON FOR ARCHITECTS
+Resilience is not only redundancy: look at what your automatic reactions do under contention. Retries and autoscaling can amplify failure.

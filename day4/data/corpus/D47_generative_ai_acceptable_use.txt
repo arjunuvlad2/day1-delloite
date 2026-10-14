@@ -1,0 +1,26 @@
+title: Generative AI Usage Guidelines
+source: SharePoint/InfoSec/Policies
+department: Security
+date: 2024-09-16
+sensitivity: internal
+policy_id: POL-SEC-020
+
+POL-SEC-020  Generative AI usage (v1.1)
+
+Generative AI can speed up drafting, analysis and coding, but it also creates new ways to leak information. These rules apply to every tool that sends prompts or files to a third party: external large language model services, browser plug-ins, AI note-takers, code assistants.
+
+APPROVED TOOLS
+Use the Northwind-hosted assistant ("NW Copilot") or other tools on the Approved AI list. They run in our tenancy, with no training on our prompts and with logging.
+
+RULES
+1. Never put Confidential information (client data, personal data, bids, unpublished financials) into a tool that is not on the Approved AI list.
+2. Do not upload client documents to any consumer or free-tier service, even to "just summarise a PDF". Client contracts frequently prohibit disclosure to sub-processors without consent.
+3. Do not record or transcribe client meetings with unapproved note-taking bots; obtain participant consent first.
+4. You remain accountable for output: check facts, citations, code licences, bias. Disclose AI use to the client where the engagement terms require it.
+5. No AI-generated content in regulated deliverables without partner review.
+6. Do not use AI tools to make decisions about people (hiring, performance, promotion) without HR approval.
+
+IF YOU MADE A MISTAKE
+Report as a security incident - there is no penalty for self-reporting. Data pasted into the wrong tool can often be deleted or the vendor can be contacted if we act within days.
+
+New tools: submit via Software Request for review (security, privacy, legal, licence).

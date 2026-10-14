@@ -1,0 +1,24 @@
+title: Engagement Acceptance and Conflict-of-Interest Check
+source: SharePoint/Risk & Quality
+department: Operations
+date: 2024-03-04
+sensitivity: internal
+policy_id: POL-RISK-002
+
+POL-RISK-002 - Accepting new work (v4)
+
+No work (including 'free pilots' or workshops) may start before the engagement is accepted in the Acceptance & Continuance (A&C) tool.
+
+Required before acceptance
+1. Client due diligence: identity, ownership, sanctions & PEP screening (KYC)
+2. Independence check: does Northwind or any partner have a financial interest, audit relationship or advisory conflict? Audit clients restrict many advisory services.
+3. Conflict search across the engagement database for adverse parties or competing mandates
+4. Risk rating (Low / Medium / High) based on sector, geography, contract terms, liability cap, reliance on AI or novel tech
+5. Engagement letter reviewed by Legal when liability is uncapped, indemnities requested, or fees contingent on results
+
+Approvals: Low - engagement partner; Medium - + Risk Partner; High - + Regional Managing Partner.
+Typical turnaround 3 days (High risk up to 10).
+
+Changes of scope above 20% of fees require a re-check.
+
+Declined opportunities are recorded with reason (good for pipeline analytics).

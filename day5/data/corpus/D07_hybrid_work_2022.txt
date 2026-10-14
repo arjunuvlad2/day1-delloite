@@ -1,0 +1,20 @@
+title: Hybrid Working Policy 2022
+source: SharePoint/People/Policies
+department: HR
+date: 2022-06-01
+sensitivity: internal
+policy_id: POL-HR-022
+
+POL-HR-022  v2.1  (effective 1 June 2022)
+
+After the pandemic restrictions we're moving to a "2 + 3" hybrid: a minimum of TWO days in the office each week, remainder at home or other agreed place.
+
+No fixed anchor days - teams decide. Hot-desk booking via the Desk app is mandatory; if there is no desk, you may stay home.
+
+Client-site staff follow client rules.
+
+Home-office allowance: GBP 150 one-off.
+
+Occasional working from a cafe or co-working space is fine so long as you keep client data secure (see InfoSec policy).
+
+NB: attendance is NOT monitored. Managers should trust their teams.

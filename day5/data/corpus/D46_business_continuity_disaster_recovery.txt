@@ -1,0 +1,47 @@
+title: Business Continuity and Disaster Recovery Plan (summary)
+source: SharePoint/Operations/BCP
+department: Operations
+date: 2024-02-26
+sensitivity: confidential
+
+BCP-001  Business Continuity & Disaster Recovery Plan - executive summary  (v5, annual test passed Feb 2024)
+
+1. PURPOSE
+To keep critical services running, or restore them within agreed time, when premises, technology, suppliers or people are not available. The plan covers all Northwind offices and shared services.
+
+2. SCENARIOS COVERED
+- Loss of premises (fire, water ingress, power failure, police cordon, building evacuated)
+- Major technology outage (identity provider, collaboration suite, cloud region)
+- Cyber attack including ransomware
+- Loss of key suppliers (payroll, connectivity)
+- Pandemic or travel restrictions; severe weather
+- Loss of key people (succession for client-critical roles)
+
+3. GOVERNANCE
+Crisis Management Team (CMT): COO (chair), CISO, CFO, Head of People, Head of Comms, General Counsel. Convened by the on-call duty director via the emergency conference bridge. Each office has a Floor Warden and a deputy.
+
+4. FIRST ACTIONS IF A BUILDING BECOMES UNUSABLE
+a) Life safety first: evacuate and account for people at the assembly point; Floor Wardens report headcount to the CMT.
+b) Floor Warden or reception notifies Facilities Helpdesk and the duty director.
+c) CMT decides within 60 minutes: (i) work from home, (ii) relocate to alternate site, (iii) split teams.
+d) All-staff notification by SMS, push alert and email (mass-notification tool "Northwind Alert"). Staff must keep contact details current in Workday.
+e) Client-critical teams contact engagement leaders; clients are informed within 4 hours where delivery is affected.
+
+5. RECOVERY OBJECTIVES (selected)
+Service                    RTO       RPO
+Email & collaboration       4 h       15 min
+Time & expense / payroll    24 h      24 h
+Analytics warehouse         8 h       1 h
+Client portals              4 h       15 min
+ERP / finance close         24 h      4 h
+
+6. ALTERNATE WORKSPACE
+Contracts with flexible-workspace providers give 150 desks in London, 60 in Manchester within 24 hours. Staff are all enabled for remote working, so most scenarios start with work-from-home.
+
+7. TESTING
+Tabletop exercise twice a year, technical DR failover once a year, call-tree test quarterly. Results go to the Executive Committee. Gaps are tracked with owners and dates.
+
+8. COMMUNICATIONS
+Use only approved channels. Don't speak to media; refer to Corporate Communications. Keep a log of decisions.
+
+Plan owner: Head of Resilience. Full plan (restricted) held in the crisis-management SharePoint and as a printed copy in each office safe.

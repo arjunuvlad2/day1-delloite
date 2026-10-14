@@ -1,0 +1,22 @@
+title: How to: Connect to the Corporate VPN (GlobalProtect)
+source: Confluence/IT/How-to
+department: IT
+date: 2024-03-18
+sensitivity: public
+
+HOW-TO: VPN with GlobalProtect (Windows & macOS)   |  last tested: March 2024
+
+1. Open the GlobalProtect icon in the system tray / menu bar.
+2. Portal address: vpn.northwind-advisory.example (pre-filled on managed laptops).
+3. Click Connect, authenticate with your Northwind email and password, then approve the push on your authenticator app.
+4. Wait for the tick: "Connected - Internal gateway". You can now reach intranet and file shares.
+
+Troubleshooting
+- "Connecting..." forever: switch off any third-party VPN, then reboot GlobalProtect (right-click > Disconnect > Connect).
+- Error ERR-4021 "Gateway authentication failed": almost always an expired / out-of-sync credential. Steps: (a) sign out of the VPN, (b) sign in to portal.northwind-advisory.example to refresh your password session, (c) in GlobalProtect choose Settings > Sign Out, then reconnect. If it persists, your MFA token may need to be re-registered (see MFA reset how-to).
+- Error ERR-4107 certificate invalid: device cert has lapsed - connect via office Wi-Fi and run "Update Device Compliance" from Self Service.
+- Slow connection: use the split-tunnel profile "Northwind-Light" if you only need Teams and email.
+
+Mobile: install GlobalProtect from the managed app store - not available on personal phones.
+
+Still stuck? Raise a ticket: Self Service > Network > VPN.  Please attach a screenshot and the time of the failure.
