@@ -54,12 +54,13 @@ def plan_llm(question, scratch, tools=TOOLS):
     prompt = (f"Tools:\n{tl}\n\nTable: {SCHEMA}\n\nScratchpad:\n{pad}\n\nQUESTION: {question}\n"
               'Reply with JSON only: {"thought": "...", "action": "<tool name or finish>", "input": "..."}')
     try:
-        out = json.loads(llm_client.call_llm(prompt, system="You are a careful planner. Pick ONE next action.", json_mode=True))
+        out = json.loads(llm_client.call_llm(prompt, system="You are a careful planner. Pick ONE next action. The tools below are NOT callable functions: do not use function calling; reply with the JSON object only.", json_mode=True))
         if out.get("action") in list(tools) + ["finish"]:
             return dict(thought=out.get("thought", ""), action=out["action"], input=str(out.get("input", "")))
         return _finish(f"Planner chose a disallowed action: {out.get('action')!r}")
-    except Exception as e:
-        return _finish(f"Planner output could not be parsed ({type(e).__name__})")
+    except Exception as e:      # live model failed or returned something unusable: keep going with the offline rules
+        print(f"[agent] live planner failed ({type(e).__name__}); using the offline rules for this step")
+        return plan_offline(question, scratch, tools)
 
 
 def plan(question, scratchpad, tools=TOOLS) -> dict:
@@ -76,8 +77,9 @@ def final_answer(question, scratch):
     ok = {s["action"]: s for s in scratch if not s["observation"].startswith("ERROR")}
     if llm_client.llm_available():
         pad = "\n".join(f"{s['action']}({s['input']}) -> {s['observation'][:600]}" for s in scratch)
-        return llm_client.call_llm(f"{pad}\n\nQUESTION: {question}",
-                                   system="Answer only from the scratchpad; if it lacks the answer say 'I could not find this'.")
+        out = llm_client.call_llm(f"{pad}\n\nQUESTION: {question}",
+                                  system="Answer only from the scratchpad; if it lacks the answer say 'I could not find this'.")
+        if out and not out.startswith("[offline demo mode]"): return out     # live answer; otherwise use the offline rules below
     if "query_sql" in ok and "calculator" in ok and "search_docs" in ok:
         cap = re.search(r"London\s+GBP\s+(\d+)", ok["search_docs"]["observation"]).group(1)
         rows = json.loads(ok["query_sql"]["observation"])

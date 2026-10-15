@@ -51,6 +51,33 @@ def _offline(user: str, system: str = None) -> str:
         return "Based on the documents: " + " ".join(f"{t} [{sid}]" for _, sid, t in top) + "  (offline demo mode: quoted, not generated)"
     return "[offline demo mode] No LLM is connected, so this step cannot produce a real answer. See the README to connect a free one."
 
+_TOOL_ERR = ("tool choice is none", "called a tool", "tool_use_failed", "failed_generation")
+def _tool_call_error(e) -> bool:
+    return any(t in str(e).lower() for t in _TOOL_ERR)
+
+def _salvage(e):
+    """If the provider returns the model's rejected output (failed_generation) and it is valid JSON, use it."""
+    try:
+        body = getattr(e, "body", None) or {}
+        txt = (body.get("error", body) or {}).get("failed_generation", "") if isinstance(body, dict) else ""
+        i, j = txt.find("{"), txt.rfind("}")
+        if i >= 0 and j > i:
+            obj = json.loads(txt[i:j + 1])
+            if isinstance(obj, dict): return json.dumps(obj)
+    except Exception:
+        pass
+    return None
+
+def _no_tools(msgs, strong=False):
+    note = (" IMPORTANT: no tools or functions exist in this chat. Never call a tool, function or browser; "
+            "write your answer directly as plain text" + (" (or the JSON object requested)." if True else ".")) + (" Do not output tool-call syntax." if strong else "")
+    out = [dict(m) for m in msgs]
+    if out and out[0]["role"] == "system":
+        if note not in out[0]["content"]: out[0]["content"] += note
+    else:
+        out.insert(0, {"role": "system", "content": note.strip()})
+    return out
+
 def call_llm(user: str, system: str = None, temperature: float = 0.2, max_tokens: int = 500,
              messages: list = None, json_mode: bool = False) -> str:
     """Return the assistant's text. Falls back to offline demo mode when no LLM is configured or the call fails."""
@@ -65,17 +92,31 @@ def call_llm(user: str, system: str = None, temperature: float = 0.2, max_tokens
             client = OpenAI(api_key=c["key"] or "not-needed", base_url=c["base"] or None)
         msgs = messages or ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": user}]
         kw = dict(model=c["model"], messages=msgs, temperature=temperature, max_tokens=max_tokens)
-        if "gpt-oss" in c["model"].lower():      # reasoning models: keep thinking short and leave room for the answer
+        oss = "gpt-oss" in c["model"].lower()
+        if oss:      # reasoning models: keep thinking short, leave room for the answer, and tell them no tools exist
             kw["max_tokens"] = max(max_tokens, 1500); kw["extra_body"] = {"reasoning_effort": "low"}
+            kw["messages"] = _no_tools(msgs)
         def _ask(kwargs):
             out = (client.chat.completions.create(**kwargs).choices[0].message.content or "").strip()
             if not out: raise ValueError("the model returned an empty answer (try a larger max_tokens or another model)")
             return out
+        def _try(kwargs):
+            last = None
+            for attempt in range(3):             # gpt-oss sometimes tries to call a tool unasked: retry, then salvage
+                try: return _ask(kwargs)
+                except Exception as e:
+                    last = e
+                    if not _tool_call_error(e): raise
+                    saved = _salvage(e) if json_mode else None
+                    if saved: return saved
+                    kwargs = {**kwargs, "temperature": 0.0, "messages": _no_tools(kwargs["messages"], strong=True)}
+            raise last
         if json_mode:
-            try: return _ask({**kw, "response_format": {"type": "json_object"}})
-            except Exception:                    # some models do not support JSON mode: retry as a normal call
-                return _ask(kw)
-        return _ask(kw)
+            try: return _try({**kw, "response_format": {"type": "json_object"}})
+            except Exception as e:
+                if _tool_call_error(e): raise
+                return _try(kw)                  # some models do not support JSON mode: retry as a normal call
+        return _try(kw)
     except Exception as e:                       # never break a live demo: say what happened and fall back
         print(f"[llm_client] call failed ({type(e).__name__}: {str(e)[:100]}); using offline demo mode")
         if "NotFound" in type(e).__name__ or "404" in str(e) or "does not exist" in str(e):
@@ -84,4 +125,6 @@ def call_llm(user: str, system: str = None, temperature: float = 0.2, max_tokens
                 print("[llm_client] models available to your key (set LLM_MODEL to one of these chat models):\n  " + "\n  ".join(ids[:25]))
             except Exception:
                 print("[llm_client] could not list models: check LLM_API_KEY and LLM_BASE_URL.")
+        if _tool_call_error(e):
+            print("[llm_client] this model keeps trying to call tools on this provider; set LLM_MODEL to another chat model (for Groq, try openai/gpt-oss-120b or qwen/qwen3.8-27b from your model list).")
         return _offline(user, system)
