@@ -25,7 +25,7 @@ A small, secure knowledge assistant for a fictional firm, Northwind. It answers 
 | M3 Evaluate, track, monitor | 4 | about 30 min | `m3_monitor.ipynb` |
 | M4 Secure and responsible AI | 5 | about 40 min | `m4_secure.ipynb` |
 | M5 End-to-end demo and your scenario | 5 | remaining time | `m5_demo.ipynb` |
-| M6 From one agent to a team of agents (before the case study) | 5 | about 15 min | `m6_multi_agent.ipynb` |
+| M6 (optional, not in the day's schedule) From one agent to a team of agents | 5 | about 15 min | `m6_multi_agent.ipynb` |
 
 ## Setup
 ```
