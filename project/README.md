@@ -10,7 +10,7 @@ A small, secure knowledge assistant for a fictional firm, Northwind. It answers 
 |---|---|
 | `nka/` | The building blocks: config, data, index, tools, agent, mcp_server, mcp_client, security, evalkit, monitor, risk |
 | `data/` | `corpus/` (48 documents) and `eval_queries.json` (golden questions) |
-| `m1_tools.ipynb` ... `m5_demo.ipynb` | The participant notebooks (open these), with `.py` script versions next to them |
+| `m1_tools.ipynb` ... `m6_multi_agent.ipynb` | The participant notebooks (open these), with `.py` script versions next to them |
 | `extra_tools.py` | Tiny module that registers `lookup_policy` in the MCP server (used in M2) |
 | `src/` | Notebook sources (trainer use) |
 | `participant/`, `trainer/` | Built copies; trainer notebooks contain solutions and outputs |
@@ -25,6 +25,7 @@ A small, secure knowledge assistant for a fictional firm, Northwind. It answers 
 | M3 Evaluate, track, monitor | 4 | about 30 min | `m3_monitor.ipynb` |
 | M4 Secure and responsible AI | 5 | about 40 min | `m4_secure.ipynb` |
 | M5 End-to-end demo and your scenario | 5 | remaining time | `m5_demo.ipynb` |
+| M6 From one agent to a team of agents (before the case study) | 5 | about 15 min | `m6_multi_agent.ipynb` |
 
 ## Setup
 ```

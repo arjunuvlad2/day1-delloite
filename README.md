@@ -10,7 +10,7 @@ Labs for the AI Solution Architect program. Each day has its own folder. Open th
 | 2 | `day2/` | Lab 2A vectors and semantic search (local + Weaviate Cloud) · Lab 2B ML system design and KPIs · Lab 2C prompting and RAG · demo notebook: LLM internals (instructor-led) |
 | 3 | `day3/` | Lab 3A RAG quality and grounding · Lab 3B Agentic RAG demo |
 | 4 | `project/` | Project milestones M1 to M3: assistant with tools, MCP, evaluate / track / monitor |
-| 5 | `project/` | Project milestones M4 and M5: secure and explain, demo and design |
+| 5 | `project/` | Project milestones M4, M5 and M6: secure and explain, demo and design, multi-agent patterns |
 | Capstone | `capstone/` | Day 5 case study: brief and response sheet; optional architecture canvas |
 
 On Days 4 and 5 you build one project, the **Northwind Knowledge Assistant**, in five milestones. Open `project/README.md` first.
