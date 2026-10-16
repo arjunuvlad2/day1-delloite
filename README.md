@@ -11,6 +11,7 @@ Labs for the AI Solution Architect program. Each day has its own folder. Open th
 | 3 | `day3/` | Lab 3A RAG quality and grounding · Lab 3B Agentic RAG demo |
 | 4 | `project/` | Project milestones M1 to M3: assistant with tools, MCP, evaluate / track / monitor |
 | 5 | `project/` | Project milestones M4 and M5: secure and explain, demo and design (M6 is an optional extra on multi-agent patterns) |
+| Reference | `architectures/` | Three architecture guides, from a small AI application to a departmental platform to an enterprise platform: components, complete folder structure, build steps |
 
 On Days 4 and 5 you build one project, the **Northwind Knowledge Assistant**, in five milestones. Open `project/README.md` first.
 
